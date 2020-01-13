@@ -1,0 +1,55 @@
+﻿<Window x:Class="GestioneMagazzino.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestioneMagazzino"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4BF791" Offset="0.008"/>
+                <GradientStop Color="#FFC9FFEE" Offset="1"/>
+                <GradientStop Color="#FF88FAF0" Offset="0.494"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Gestione Magazzino" BorderThickness="1.5" HorizontalAlignment="Left" Height="45" Margin="135,35,0,0" VerticalAlignment="Top" Width="210" FontFamily="Segoe Print" FontSize="20" Background="#FF52BDAA" BorderBrush="#FF1F7652"/>
+        <TextBox Name="txtnome" HorizontalAlignment="Left" Height="30" Margin="270,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox Name="txtprezzo" HorizontalAlignment="Left" Height="30" Margin="330,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Inserisci qui il prodotto:" HorizontalAlignment="Left" Height="40" Margin="50,105,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe Print" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Inserisci qui il prezzo del prodotto:" HorizontalAlignment="Left" Height="38" Margin="50,162,0,0" VerticalAlignment="Top" Width="265" FontFamily="Segoe Print" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Name="btnaggiungi" Content="Aggiungi" HorizontalAlignment="Left" Height="45" Margin="175,235,0,0" VerticalAlignment="Top" Width="140" Click="btnaggiungi_Click" FontFamily="Segoe Print" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FF65B9C1"/>
+                    <GradientStop Color="#FF65B9C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="btnvisualizza" Content="Visualizza" HorizontalAlignment="Left" Height="50" Margin="175,300,0,0" VerticalAlignment="Top" Width="140" Click="btnvisualizza_Click" FontFamily="Segoe Print" FontSize="16">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FF65B9C1"/>
+                    <GradientStop Color="#FF65B9C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Name="lbllista" Content="" HorizontalAlignment="Left" Height="255" Margin="515,95,0,0" VerticalAlignment="Top" Width="225"/>
+        <Button Name="btncancella" Content="Cancella tutto" Height="25" Margin="655,375,22,0" VerticalAlignment="Top" FontFamily="Segoe Print" Click="btncancella_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FF65B9C1"/>
+                    <GradientStop Color="#FF65B9C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
