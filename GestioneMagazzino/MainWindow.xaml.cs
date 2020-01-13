@@ -44,7 +44,7 @@ namespace GestioneMagazzino
                 string prodotto = txtnome.Text;
                 double prezzo = double.Parse(txtprezzo.Text);
 
-                StreamWriter sw = new StreamWriter("listaprodotti.txt", true, Encoding.UTF8);
+                StreamWriter sw = new StreamWriter ("listaprodotti.txt", true, Encoding.UTF8);
                 sw.WriteLine($"{prodotto}, {prezzo} euro");
                 sw.Flush();
                 sw.Close();
